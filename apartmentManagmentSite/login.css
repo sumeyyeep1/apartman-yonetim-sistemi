@@ -1,0 +1,84 @@
+body {
+    background-color: #ffffff; /* Arka plan rengini koyu gri yap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Sayfayı tam ekran yap */
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-container {
+    background-color: #ffffff; /* Beyaz arka plan */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px; /* Form genişliği */
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 120px; /* Logoyu küçült */
+    margin-bottom: 10px;
+    top: 10px; /* Logoyu yukarı taşır */
+    left: 10px; /* Sol hizalama */
+}
+
+.register-btn {
+    background-color: #bad6eb; /* Açık mavi */
+    color: #000000; /* Mavi yazı */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer; /*fare imlecinin üzerine gelince el olur*/
+    font-size: 14px;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-top:20px;
+    width: 100%;
+}
+
+.login-form input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b6a6a6;
+    width: 100%;
+}
+
+.form-options {
+    display: flex;
+    font-size: 14px;
+    color: #555;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #060707;
+    bottom: 10px;
+}
+
+.submit-btn {
+    background-color: #457db6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #2457be;
+}
+.login-form label{
+    text-align: left;
+    
+}

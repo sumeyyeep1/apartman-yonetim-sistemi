@@ -1,0 +1,159 @@
+/* Genel Stil */
+body {
+    height: 100%;
+    background-color: rgb(17, 130, 138); /* Açık gri arka plan */
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1; /* İçeriğin kalan alanı kaplamasını sağlar */
+    padding-bottom: 80px; /* Footer ile içerik arasında boşluk bırakır */
+}
+
+/* Footer */
+footer {
+    background-color: #524d4d;
+    color: rgb(250, 249, 249);
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    text-align: left; /* Metni sola hizala */
+}
+
+/* Sosyal Medya İkonları */
+.social-media img {
+    width: 20px; /* Küçültülmüş ikon */
+    height: 20px;
+    transition: transform 0.3s ease;
+    margin: 0 5px;
+    object-fit: contain;
+}
+
+.social-media img:hover {
+    transform: scale(1.2); /* Üzerine gelince büyüme efekti */
+}
+
+/* Ana İçerik */
+main {
+    padding-bottom: 80px; 
+    flex-grow: 1;
+}
+
+/* Linkler */
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Logo */
+.logo {
+    width: 120px; /* Küçültüldü */
+    height: auto;
+}
+
+/* Giriş Yap ve Kayıt Ol Butonları */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+}
+
+.auth-btn {
+    background-color: #e3e0eb;
+    color: rgb(145, 72, 72);
+    padding: 10px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: rgb(148, 102, 102);
+}
+
+/* Responsive Butonlar */
+@media screen and (max-width: 768px) {
+    .auth-buttons {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .auth-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
+
+/* Features */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature İçindeki Görseller */
+.feature-image {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover .feature-image {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .feature {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feature {
+        width: 100%;
+    }
+}
